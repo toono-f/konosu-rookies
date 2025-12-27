@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function JoinSection() {
   return (
-    <section id="join" className="py-12 md:py-20 lg:py-28 bg-cream scroll-mt-16 md:scroll-mt-20">
+    <section
+      id="join"
+      className="py-12 md:py-20 lg:py-28 bg-cream scroll-mt-16 md:scroll-mt-20"
+    >
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-12">
@@ -88,41 +91,16 @@ export default function JoinSection() {
               <p className="text-gold text-[10px] md:text-xs font-semibold mb-2">
                 例）
               </p>
-              <div className="text-white/70 text-[10px] md:text-xs space-y-1">
+              <div className="text-white/70 text-[10px] md:text-xs space-y-0.5 leading-relaxed">
                 <p>
                   こんにちは。●●（Ex.チームHP,ジモティ等）を拝見して連絡しました。
                 </p>
-                <div className="flex items-start gap-1.5 mt-1.5">
-                  <span className="shrink-0 w-3.5 h-3.5 bg-gold/30 rounded-full flex items-center justify-center text-gold text-[8px] font-semibold">
-                    1
-                  </span>
-                  <span>佐藤</span>
-                </div>
-                <div className="flex items-baseline gap-1.5">
-                  <span className="shrink-0 w-3.5 h-3.5 bg-gold/30 rounded-full flex items-center justify-center text-gold text-[8px] font-semibold">
-                    2
-                  </span>
-                  <span>32歳</span>
-                </div>
-                <div className="flex items-baseline gap-1.5">
-                  <span className="shrink-0 w-3.5 h-3.5 bg-gold/30 rounded-full flex items-center justify-center text-gold text-[8px] font-semibold">
-                    3
-                  </span>
-                  <span>小5〜小6、高校部活1年、草野球2年（31歳〜現在）</span>
-                </div>
-                <div className="flex items-baseline gap-1.5">
-                  <span className="shrink-0 w-3.5 h-3.5 bg-gold/30 rounded-full flex items-center justify-center text-gold text-[8px] font-semibold">
-                    4
-                  </span>
-                  <span>鴻巣市</span>
-                </div>
-                <div className="flex items-baseline gap-1.5">
-                  <span className="shrink-0 w-3.5 h-3.5 bg-gold/30 rounded-full flex items-center justify-center text-gold text-[8px] font-semibold">
-                    5
-                  </span>
-                  <span>捕手、投手、外野等</span>
-                </div>
-                <p className="mt-1.5">よろしくお願いします。</p>
+                <p>1. 佐藤</p>
+                <p>2. 32歳</p>
+                <p>3. 小5〜小6、高校部活1年、草野球2年（31歳〜現在）</p>
+                <p>4. 鴻巣市</p>
+                <p>5. 捕手、投手、外野等</p>
+                <p className="mt-1">よろしくお願いします。</p>
               </div>
             </div>
 
@@ -143,8 +121,12 @@ export default function JoinSection() {
               <h4 className="text-sm md:text-base font-bold text-white mb-2 md:mb-3 text-center">
                 【最後にひとこと】
               </h4>
-              <p className="text-white/90 text-xs sm:text-sm md:text-base leading-relaxed text-center">
-                「野球が好き」「もう一度グラウンドに立ちたい」「気の合う仲間といい汗を流したい」――そんな想いを持つあなたを歓迎します。鴻巣ROOKIESは、硬さではなく&ldquo;楽しさ&rdquo;&ldquo;成長&rdquo;&ldquo;仲間づくり&rdquo;を大切にするチームです。
+              <p className="text-white/90 text-xs sm:text-sm md:text-base leading-relaxed sm:text-center">
+                「野球が好き」「もう一度グラウンドに立ちたい」「気の合う仲間といい汗を流したい」
+                <br />
+                そんな想いを持つあなたを歓迎します。
+                <br />
+                鴻巣ROOKIESは、硬さではなく&ldquo;楽しさ&rdquo;&ldquo;成長&rdquo;&ldquo;仲間づくり&rdquo;を大切にするチームです。
               </p>
             </div>
           </div>
