@@ -46,4 +46,14 @@ npm run build
 
 ## TODO
 
-- [ ] OGP画像の作成（1200x630px）
+### OGP画像の作成
+- [ ] `/public/og-image.png` を作成する
+  - サイズ: 1200 x 630 px
+  - 用途: SNSシェア時のサムネイル画像（Twitter, Facebook, LINE等）
+  - 内容例: チームロゴ + チーム名 + キャッチコピー
+
+### microCMSでのコンテンツ更新対応
+- [ ] microCMSのAPI設定（サービス作成、API作成）
+- [ ] 環境変数の設定（MICROCMS_SERVICE_DOMAIN, MICROCMS_API_KEY）
+- [ ] チーム方針ページのコンテンツをmicroCMSから取得
+- [ ] 活動一覧ページのコンテンツをmicroCMSから取得
