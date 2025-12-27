@@ -9,10 +9,60 @@ export default function ActivitiesPage() {
             活動一覧
           </h1>
 
-          <div className="bg-white rounded-2xl md:rounded-3xl shadow-lg p-8 md:p-12 text-center">
-            <div className="w-16 h-16 md:w-20 md:h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+          {/* Notice */}
+          <div className="bg-white rounded-2xl md:rounded-3xl shadow-lg p-6 md:p-8 mb-6 md:mb-8">
+            <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+              現在、チーム加入検討者の体験練習会のみ受け付けており、ご興味ある方はお気軽に直接連絡ください
+            </p>
+          </div>
+
+          {/* Practice Schedule */}
+          <div className="bg-white rounded-2xl md:rounded-3xl shadow-lg p-6 md:p-8 mb-6 md:mb-8">
+            <h2 className="text-lg md:text-xl font-bold text-navy mb-4 md:mb-6">
+              【練習会直近予定表】
+            </h2>
+            <div className="bg-burgundy/10 rounded-xl p-5 md:p-6">
+              <p className="text-burgundy font-bold text-sm md:text-base leading-relaxed">
+                参加希望者は↓の連絡先にて参加希望いただけましたら、詳細案内を送ります。
+              </p>
+            </div>
+            <div className="mt-6 text-center">
+              <a
+                href="mailto:konosurookies@gmail.com"
+                className="inline-flex items-center gap-2 text-navy font-semibold hover:text-burgundy transition-colors"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                konosurookies@gmail.com
+              </a>
+            </div>
+          </div>
+
+          {/* Game Results */}
+          <div className="bg-white rounded-2xl md:rounded-3xl shadow-lg p-6 md:p-8 mb-6 md:mb-8">
+            <h2 className="text-lg md:text-xl font-bold text-navy mb-4 md:mb-6">
+              【試合結果】
+            </h2>
+            <a
+              href="https://teams.one/teams/konosurookies/game"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-burgundy font-semibold underline hover:text-burgundy-light transition-colors text-sm md:text-base"
+            >
+              https://teams.one/teams/konosurookies/game
               <svg
-                className="w-8 h-8 md:w-10 md:h-10 text-gold"
+                className="w-4 h-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -21,18 +71,14 @@ export default function ActivitiesPage() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                 />
               </svg>
-            </div>
-            <h2 className="text-xl md:text-2xl font-bold text-navy mb-4">
-              現在準備中
-            </h2>
-            <p className="text-navy/70 text-sm md:text-base leading-relaxed mb-6">
-              活動一覧ページは現在準備中です。
-              <br />
-              近日公開予定ですので、もうしばらくお待ちください。
-            </p>
+            </a>
+          </div>
+
+          {/* Back to Top */}
+          <div className="text-center">
             <a
               href="/"
               className="inline-flex items-center justify-center px-6 py-3 bg-navy text-white font-semibold rounded-lg transition-all duration-300 hover:bg-navy-light"

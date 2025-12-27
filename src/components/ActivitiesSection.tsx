@@ -86,7 +86,7 @@ export default function ActivitiesSection() {
         {/* Schedule Link */}
         <div className="text-center">
           <a
-            href="#"
+            href="/activities"
             className="inline-flex items-center gap-2 bg-burgundy text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-sm md:text-base font-semibold hover:bg-burgundy-light transition-colors"
           >
             <svg
