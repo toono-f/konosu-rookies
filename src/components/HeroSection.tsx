@@ -25,7 +25,7 @@ export default function HeroSection() {
         {/* Subtitle */}
         <div className="text-xs sm:text-sm md:text-base text-white/90 max-w-2xl mx-auto mb-6 md:mb-8 leading-relaxed animate-on-load animate-fade-in-up animate-delay-200">
           <p className="text-sm sm:text-base md:text-lg font-semibold mb-2">未経験・初心者歓迎！</p>
-          <p>鴻巣市で"野球をとことん楽しめる"仲間をあと1名募集します。上手さは問わないので10代〜30代の未経験・初心者からの応募をお待ちしています。</p>
+          <p>鴻巣市で&ldquo;野球をとことん楽しめる&rdquo;仲間をあと1名募集します。上手さは問わないので10代〜30代の未経験・初心者からの応募をお待ちしています。</p>
         </div>
 
         {/* Description */}

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ActivitiesSection() {
   return (
     <section id="activities" className="py-12 md:py-20 lg:py-28 bg-white">
@@ -85,7 +87,7 @@ export default function ActivitiesSection() {
 
         {/* Schedule Link */}
         <div className="text-center">
-          <a
+          <Link
             href="/activities"
             className="inline-flex items-center gap-2 bg-burgundy text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-sm md:text-base font-semibold hover:bg-burgundy-light transition-colors"
           >
@@ -103,7 +105,7 @@ export default function ActivitiesSection() {
               />
             </svg>
             週次の活動スケジュール
-          </a>
+          </Link>
         </div>
       </div>
     </section>

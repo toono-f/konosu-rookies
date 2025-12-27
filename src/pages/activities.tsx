@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Link from "next/link";
 
 export default function ActivitiesPage() {
   return (
@@ -82,12 +83,12 @@ export default function ActivitiesPage() {
 
           {/* Back to Top */}
           <div className="text-center">
-            <a
+            <Link
               href="/"
               className="inline-flex items-center justify-center px-6 py-3 bg-navy text-white font-semibold rounded-lg transition-all duration-300 hover:bg-navy-light"
             >
               トップページに戻る
-            </a>
+            </Link>
           </div>
         </div>
       </section>

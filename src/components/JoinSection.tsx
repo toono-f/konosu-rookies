@@ -112,7 +112,7 @@ export default function JoinSection() {
                 【最後にひとこと】
               </h4>
               <p className="text-white/90 text-xs sm:text-sm md:text-base leading-relaxed text-center">
-                「野球が好き」「もう一度グラウンドに立ちたい」「気の合う仲間といい汗を流したい」――そんな想いを持つあなたを歓迎します。鴻巣ROOKIESは、硬さではなく"楽しさ""成長""仲間づくり"を大切にするチームです。
+                「野球が好き」「もう一度グラウンドに立ちたい」「気の合う仲間といい汗を流したい」――そんな想いを持つあなたを歓迎します。鴻巣ROOKIESは、硬さではなく&ldquo;楽しさ&rdquo;&ldquo;成長&rdquo;&ldquo;仲間づくり&rdquo;を大切にするチームです。
               </p>
             </div>
           </div>

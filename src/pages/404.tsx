@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Link from "next/link";
 
 export default function Custom404() {
   return (
@@ -17,12 +18,12 @@ export default function Custom404() {
           <p className="text-navy/70 text-sm md:text-base mb-8">
             お探しのページは移動または削除された可能性があります。
           </p>
-          <a
+          <Link
             href="/"
             className="inline-flex items-center justify-center px-6 py-3 bg-navy text-white font-semibold rounded-lg transition-all duration-300 hover:bg-navy-light"
           >
             トップページに戻る
-          </a>
+          </Link>
         </div>
       </section>
     </Layout>
