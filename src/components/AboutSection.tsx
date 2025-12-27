@@ -16,26 +16,37 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-12 md:py-20 lg:py-28 bg-cream">
+    <section id="about" className="py-12 md:py-20 lg:py-28 bg-cream scroll-mt-16 md:scroll-mt-20">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-14">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-navy mb-4 md:mb-6 leading-snug accent-line">
-            野球を「やってみたい」「また始めたい」と思っているあなたへ。
+            野球を <span>やってみたい </span>
+            <span>また始めたい </span>
+            <br className="sm:hidden" />
+            と思っているあなたへ。
           </h2>
           <div className="text-navy/70 text-xs sm:text-sm md:text-base mx-auto leading-relaxed space-y-3 mt-6">
             <p>
-              「どこに入ればいいか迷っている」「もっと野球を楽しみたい・成長したい」――
+              「どこに入ればいいか迷っている」
+              <br className="sm:hidden" />
+              「もっと野球を楽しみたい・成長したい」
               <br />
               そんな想いを持っていませんか？
             </p>
             <p>
-              鴻巣ROOKIESは、&ldquo;初心者・未経験でも安心&rdquo;&ldquo;みんなと一緒に成長＆楽しめる&rdquo;をモットーに、
+              鴻巣ROOKIESは、
+              <br className="sm:hidden" />
+              &ldquo;初心者・未経験でも安心&rdquo;
+              <br className="sm:hidden" />
+              &ldquo;みんなと一緒に成長＆楽しめる&rdquo;をモットーに
               <br />
               和気あいあいと活動する草野球チームです。
             </p>
             <p>
-              &ldquo;野球を心から好きな人&rdquo;なら、年齢・性別・経験は問いません。
+              &ldquo;野球を心から好きな人&rdquo;なら、
+              <br className="sm:hidden" />
+              年齢・性別・経験は問いません。
               <br />
               一緒にグローブを持って、気軽にプレーしませんか？
             </p>
@@ -73,7 +84,14 @@ export default function AboutSection() {
               ))}
             </ul>
             <p className="mt-6 md:mt-8 text-burgundy font-semibold text-xs sm:text-sm md:text-base text-left sm:text-center">
-              などなど、、、そんな&ldquo;野球に対するモヤモヤ&rdquo;を抱えているなら、ぜひ鴻巣ROOKIES（チーム方針）をご覧ください！
+              などなど、そんな&ldquo;野球に対するモヤモヤ&rdquo;を抱えているなら、
+              <Link
+                href="/policy"
+                className="text-gold hover:text-gold-light transition-colors underline"
+              >
+                チーム方針
+              </Link>
+              をご覧ください！
             </p>
           </div>
         </div>
@@ -83,9 +101,9 @@ export default function AboutSection() {
           {/* Team Policy - Link only */}
           <Link
             href="/policy"
-            className="bg-navy rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 text-white block hover:bg-navy-light transition-colors"
+            className="group bg-navy rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 text-white block shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 ring-2 ring-gold/20 hover:ring-gold/50"
           >
-            <div className="w-12 h-12 md:w-14 md:h-14 bg-gold rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-5">
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-gold rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-5 group-hover:scale-110 transition-transform duration-300">
               <svg
                 className="w-6 h-6 md:w-7 md:h-7 text-navy"
                 fill="none"
@@ -106,10 +124,10 @@ export default function AboutSection() {
             <p className="text-white/80 text-sm md:text-base leading-relaxed mb-3">
               詳しいチーム方針はこちらをご覧ください。
             </p>
-            <span className="inline-flex items-center gap-2 text-gold text-sm md:text-base hover:text-gold-light transition-colors">
+            <span className="inline-flex items-center gap-2 text-gold text-sm md:text-base font-semibold">
               詳細を見る
               <svg
-                className="w-4 h-4"
+                className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -147,15 +165,30 @@ export default function AboutSection() {
             <p className="text-white/80 text-sm md:text-base leading-relaxed mb-3">
               以下3点の想いが詰まっております。
             </p>
-            <ul className="text-white/80 text-sm md:text-base space-y-2 md:space-y-3">
-              <li>・鴻巣市内で活動する草野球チーム</li>
-              <li>
-                ・ルーキー（初心者・未経験者）も大歓迎。ブランクがあってもOK。野球をまた始めたい方もどうぞ。
+            <ol className="text-white/80 text-sm md:text-base space-y-2 md:space-y-3">
+              <li className="flex items-baseline gap-2">
+                <span className="shrink-0 w-5 h-5 md:w-6 md:h-6 bg-gold/30 rounded-full flex items-center justify-center text-gold text-xs md:text-sm font-semibold">
+                  1
+                </span>
+                <span>鴻巣市内で活動する草野球チーム</span>
               </li>
-              <li>
-                ・TBSドラマ「ROOKIES」のような少数精鋭組織で、絆（仲間意識）の強い、楽しめる野球チームにしたい
+              <li className="flex items-baseline gap-2">
+                <span className="shrink-0 w-5 h-5 md:w-6 md:h-6 bg-gold/30 rounded-full flex items-center justify-center text-gold text-xs md:text-sm font-semibold">
+                  2
+                </span>
+                <span>
+                  ルーキー（初心者・未経験者）も大歓迎。ブランクがあってもOK。野球をまた始めたい方もどうぞ。
+                </span>
               </li>
-            </ul>
+              <li className="flex items-baseline gap-2">
+                <span className="shrink-0 w-5 h-5 md:w-6 md:h-6 bg-gold/30 rounded-full flex items-center justify-center text-gold text-xs md:text-sm font-semibold">
+                  3
+                </span>
+                <span>
+                  TBSドラマ「ROOKIES」のような少数精鋭組織で、絆（仲間意識）の強い、楽しめる野球チームにしたい
+                </span>
+              </li>
+            </ol>
           </div>
         </div>
       </div>

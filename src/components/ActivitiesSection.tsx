@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ActivitiesSection() {
   return (
-    <section id="activities" className="py-12 md:py-20 lg:py-28 bg-white">
+    <section id="activities" className="py-12 md:py-20 lg:py-28 bg-white scroll-mt-16 md:scroll-mt-20">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-14">
@@ -31,7 +31,7 @@ export default function ActivitiesSection() {
             <div className="pl-0 sm:pl-[148px] md:sm:pl-[168px] text-navy/70 text-xs md:text-sm">
               <p>
                 有志は朝早くから集まり5時間以上野球したり、時には午後練もしています。
-                <br />
+                <br className="hidden sm:inline" />
                 部活の雰囲気ではなく、やりたい人で楽しくやっています。
               </p>
             </div>

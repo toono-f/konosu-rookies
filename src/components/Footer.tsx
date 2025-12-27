@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const socialLinks = [
   {
     name: "Instagram",
@@ -29,9 +31,13 @@ export default function Footer() {
             {/* Logo & Description */}
             <div>
               <div className="flex items-center gap-2 sm:gap-3 mb-3 md:mb-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-gold rounded-full flex items-center justify-center">
-                  <span className="text-navy font-bold text-lg md:text-xl">KR</span>
-                </div>
+                <Image
+                  src="/logo.png"
+                  alt="鴻巣ROOKIES"
+                  width={48}
+                  height={48}
+                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
+                />
                 <div>
                   <p className="font-bold text-lg md:text-xl">鴻巣ROOKIES</p>
                   <p className="text-gold text-xs md:text-sm">Konosu Rookies</p>

@@ -2,13 +2,13 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-navy via-navy to-burgundy-dark" />
+      <div className="absolute inset-0 bg-linear-to-b from-navy via-navy to-burgundy-dark" />
 
       {/* 装飾: 光線エフェクト */}
       <div className="light-rays" />
 
       {/* 装飾: 上部のアクセントライン */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-gold/50 to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 text-left sm:text-center py-12 md:py-16">
@@ -19,20 +19,36 @@ export default function HeroSection() {
 
         {/* 装飾ライン */}
         <div className="flex justify-center mb-8 md:mb-10 animate-on-load animate-fade-in animate-delay-200">
-          <div className="w-20 md:w-24 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent" />
+          <div className="w-20 md:w-24 h-0.5 bg-linear-to-r from-transparent via-gold to-transparent" />
         </div>
 
         {/* Subtitle */}
         <div className="text-xs sm:text-sm md:text-base text-white/90 max-w-2xl mx-auto mb-6 md:mb-8 leading-relaxed animate-on-load animate-fade-in-up animate-delay-200">
-          <p className="text-sm sm:text-base md:text-lg font-semibold mb-2">未経験・初心者歓迎！</p>
-          <p>鴻巣市で&ldquo;野球をとことん楽しめる&rdquo;仲間をあと1名募集します。上手さは問わないので10代〜30代の未経験・初心者からの応募をお待ちしています。</p>
+          <p className="text-sm sm:text-base md:text-lg font-semibold mb-2">
+            未経験・初心者歓迎！
+          </p>
+          <p>
+            鴻巣市で&ldquo;野球をとことん楽しめる&rdquo;仲間をあと1名募集します。
+            <br />
+            上手さは問わないので10代〜30代の未経験・初心者からの応募をお待ちしています。
+          </p>
         </div>
 
         {/* Description */}
         <div className="text-xs sm:text-sm md:text-base text-white/70 max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed space-y-2 animate-on-load animate-fade-in-up animate-delay-300">
-          <p>「野球をやってみたい」「もう一度プレーしたい」――そんなあなたへ。</p>
-          <p>鴻巣ROOKIESは、埼玉県鴻巣市を拠点に活動する草野球チームです。初心者・ブランクありの方も安心して参加でき、明るく楽しく活動しています。</p>
-          <p>毎週土曜午前に練習・試合を行い、「楽しさ」「成長」「仲間づくり」を大切にしています。</p>
+          <p>
+            「野球を始めたい」「もう一度グラウンドに立ちたい」
+            <br />
+            そんな想いを抱くあなたへ。
+          </p>
+          <p>
+            鴻巣ROOKIESは、埼玉県鴻巣市を拠点に活動する草野球チームです。
+            <br className="sm:inline hidden" />
+            初心者・ブランクありの方も安心して参加でき、明るく楽しく活動しています。
+          </p>
+          <p>
+            毎週土曜午前に練習・試合を行い、「楽しさ」「成長」「仲間づくり」を大切にしています。
+          </p>
         </div>
 
         {/* CTA Buttons */}
@@ -87,7 +103,7 @@ export default function HeroSection() {
       </a>
 
       {/* 装飾: 下部のグラデーションフェード */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-burgundy-dark/50 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-burgundy-dark/50 to-transparent pointer-events-none" />
     </section>
   );
 }

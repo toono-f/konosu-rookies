@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CTASection() {
   return (
-    <section id="contact" className="bg-burgundy py-10 md:py-16">
+    <section id="contact" className="bg-burgundy py-10 md:py-16 scroll-mt-16 md:scroll-mt-20">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
         <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3 md:mb-4">
           <span className="block sm:inline">野球好きなあなたの</span>
