@@ -44,7 +44,7 @@ export default function CTASection() {
           </a>
 
           <a
-            href="https://x.com/konosu_rookies"
+            href="https://x.com/toeic_coach_"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-1.5 sm:gap-2 group"

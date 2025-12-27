@@ -61,9 +61,9 @@ export default function ActivitiesPage() {
               href="https://teams.one/teams/konosurookies/game"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-burgundy font-semibold underline hover:text-burgundy-light transition-colors text-sm md:text-base"
+              className="inline-flex items-center gap-2 text-burgundy font-semibold underline hover:text-burgundy-light transition-colors text-sm md:text-base break-all"
             >
-              https://teams.one/teams/konosurookies/game
+              TEAMS 試合結果ページ
               <svg
                 className="w-4 h-4"
                 fill="none"
