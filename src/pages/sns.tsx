@@ -44,7 +44,10 @@ const snsLinks = [
 
 export default function SNSPage() {
   return (
-    <Layout>
+    <Layout
+      title="SNS一覧 - 鴻巣ROOKIES"
+      description="鴻巣ROOKIESのSNSアカウント一覧。Instagram、X、TEAMS、labola、ジモティーで最新情報をチェック！"
+    >
       <section className="min-h-screen pt-24 md:pt-32 pb-16 md:pb-24 bg-cream">
         <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy text-center mb-4 md:mb-6 accent-line">

@@ -2,7 +2,10 @@ import Layout from "@/components/Layout";
 
 export default function ActivitiesPage() {
   return (
-    <Layout>
+    <Layout
+      title="活動一覧 - 鴻巣ROOKIES"
+      description="鴻巣ROOKIESの活動情報。練習会の予定や試合結果をご確認いただけます。体験練習会への参加もお気軽にご連絡ください。"
+    >
       <section className="min-h-screen pt-24 md:pt-32 pb-16 md:pb-24 bg-cream">
         <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy text-center mb-8 md:mb-12 accent-line">

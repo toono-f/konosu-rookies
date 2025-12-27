@@ -1,0 +1,21 @@
+{
+  "name": "鴻巣ROOKIES",
+  "short_name": "鴻巣ROOKIES",
+  "description": "埼玉県鴻巣市の草野球チーム。未経験者・初心者大歓迎！",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f5eb",
+  "theme_color": "#1e2a4a",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

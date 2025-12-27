@@ -7,13 +7,19 @@ interface LayoutProps {
   children: ReactNode;
   title?: string;
   description?: string;
+  ogImage?: string;
 }
+
+const SITE_URL = "https://konosu-rookies.vercel.app";
 
 export default function Layout({
   children,
   title = "鴻巣ROOKIES - 埼玉県鴻巣市の草野球チーム",
   description = "鴻巣ROOKIESは埼玉県鴻巣市を拠点とする草野球チームです。未経験者・初心者大歓迎！10代〜30代のメンバーを募集中。一緒に野球を楽しみましょう。",
+  ogImage = "/og-image.png",
 }: LayoutProps) {
+  const ogImageUrl = `${SITE_URL}${ogImage}`;
+
   return (
     <>
       <Head>
@@ -25,8 +31,15 @@ export default function Layout({
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ja_JP" />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="twitter:image" content={ogImageUrl} />
+        <link rel="icon" href="/logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#1e2a4a" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

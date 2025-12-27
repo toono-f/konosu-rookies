@@ -2,7 +2,10 @@ import Layout from "@/components/Layout";
 
 export default function PolicyPage() {
   return (
-    <Layout>
+    <Layout
+      title="チーム方針 - 鴻巣ROOKIES"
+      description="鴻巣ROOKIESのチーム方針をご紹介。協力姿勢・参加率・一生懸命プレーする人を大切にし、年会費無料で楽しく野球ができる環境を提供しています。"
+    >
       <section className="min-h-screen pt-24 md:pt-32 pb-16 md:pb-24 bg-cream">
         <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy text-center mb-8 md:mb-12 accent-line">
