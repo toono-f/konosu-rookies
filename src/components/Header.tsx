@@ -7,7 +7,7 @@ const navItems = [
   { label: "チーム方針", href: "/policy" },
   { label: "活動一覧", href: "/activities" },
   { label: "SNS", href: "/sns" },
-  { label: "お問い合わせ", href: "#contact" },
+  { label: "お問い合わせ", href: "/#contact" },
 ];
 
 export default function Header() {
