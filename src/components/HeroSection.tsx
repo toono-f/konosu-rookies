@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
+    <section className="relative min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-navy via-navy to-burgundy-dark" />
 
@@ -66,9 +66,13 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce animate-on-load animate-fade-in animate-delay-600">
+      <a
+        href="#about"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce animate-on-load animate-fade-in animate-delay-600 cursor-pointer hover:scale-110 transition-transform"
+        aria-label="下にスクロール"
+      >
         <svg
-          className="w-5 h-5 text-white/40"
+          className="w-6 h-6 text-white/60 hover:text-white/80 transition-colors animate-pulse"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -80,7 +84,7 @@ export default function HeroSection() {
             d="M19 14l-7 7m0 0l-7-7m7 7V3"
           />
         </svg>
-      </div>
+      </a>
 
       {/* 装飾: 下部のグラデーションフェード */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-burgundy-dark/50 to-transparent pointer-events-none" />
