@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 鴻巣ROOKIES
 
-## Getting Started
+埼玉県鴻巣市を拠点とする草野球チーム「鴻巣ROOKIES」の公式サイトです。
 
-First, run the development server:
+## サイトURL
+
+https://konosu-rookies.vercel.app/
+
+## ページ構成
+
+| ページ | URL | 説明 |
+|--------|-----|------|
+| トップ | `/` | チーム紹介、活動内容、入部案内 |
+| チーム方針 | `/policy` | チームの方針・特徴・今後の構想 |
+| 活動一覧 | `/activities` | 練習会予定、試合結果 |
+| SNS一覧 | `/sns` | 各SNSアカウントへのリンク |
+
+## 技術スタック
+
+- **フレームワーク**: Next.js 16 (Page Router)
+- **スタイリング**: Tailwind CSS v4
+- **フォント**: Noto Sans JP
+- **ホスティング**: Vercel
+
+## 開発
 
 ```bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバー起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# ビルド
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## カラースキーム
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+| 色 | コード | 用途 |
+|----|--------|------|
+| Navy | `#1e2a4a` | メインカラー |
+| Burgundy | `#8b2942` | アクセント |
+| Gold | `#c9a227` | ハイライト |
+| Cream | `#f8f5eb` | 背景 |
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## TODO
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- [ ] OGP画像の作成（1200x630px）
