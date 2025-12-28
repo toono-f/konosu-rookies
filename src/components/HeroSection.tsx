@@ -1,4 +1,13 @@
 export default function HeroSection() {
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
+    e.preventDefault();
+    const element = document.getElementById(hash);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", `#${hash}`);
+    }
+  };
+
   return (
     <section className="relative min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden">
       {/* Background */}
@@ -55,6 +64,7 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-3 justify-center animate-on-load animate-fade-in-up animate-delay-400">
           <a
             href="#about"
+            onClick={(e) => handleAnchorClick(e, "about")}
             className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 bg-gold text-navy text-sm md:text-base font-bold rounded-lg transition-all duration-300 hover:bg-gold-light hover:shadow-xl hover:shadow-gold/30 hover:-translate-y-1"
           >
             チームを知る
@@ -74,6 +84,7 @@ export default function HeroSection() {
           </a>
           <a
             href="#join"
+            onClick={(e) => handleAnchorClick(e, "join")}
             className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 border-2 border-white/30 text-white text-sm md:text-base font-bold rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/50"
           >
             入部案内を見る
@@ -84,6 +95,7 @@ export default function HeroSection() {
       {/* Scroll indicator */}
       <a
         href="#about"
+        onClick={(e) => handleAnchorClick(e, "about")}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce animate-on-load animate-fade-in animate-delay-600 cursor-pointer hover:scale-110 transition-transform"
         aria-label="下にスクロール"
       >

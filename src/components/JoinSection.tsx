@@ -31,7 +31,7 @@ export default function JoinSection() {
         {/* Application Info */}
         <div className="bg-navy rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-10">
           <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-4 md:mb-6 text-center">
-            【入部体験・練習参加のご案内／応募方法】
+            【入部体験・練習参加のご案内/応募方法】
           </h3>
 
           <div className="bg-white/10 rounded-xl md:rounded-2xl p-4 sm:p-5 md:p-6 mb-5">
