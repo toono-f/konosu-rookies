@@ -2,7 +2,10 @@ import Link from "next/link";
 
 export default function ActivitiesSection() {
   return (
-    <section id="activities" className="py-12 md:py-20 lg:py-28 bg-white scroll-mt-16 md:scroll-mt-20">
+    <section
+      id="activities"
+      className="py-12 md:py-20 lg:py-28 bg-white scroll-mt-16 md:scroll-mt-20"
+    >
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-14">
@@ -31,7 +34,7 @@ export default function ActivitiesSection() {
               <span className="font-bold text-navy min-w-[140px] md:min-w-[160px]">
                 【活動時間】
               </span>
-              <span className="text-navy/80">基本9時〜13時or8時〜12時</span>
+              <span className="text-navy/80">基本9時〜13時 or 8時〜12時</span>
             </div>
 
             <div className="pl-0 sm:pl-[148px] md:sm:pl-[168px] text-navy/70 text-xs md:text-sm">

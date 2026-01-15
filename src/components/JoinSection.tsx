@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function JoinSection() {
   return (
@@ -37,7 +38,21 @@ export default function JoinSection() {
           <div className="bg-white/10 rounded-xl md:rounded-2xl p-4 sm:p-5 md:p-6 mb-5">
             <div className="text-white/90 text-xs sm:text-sm md:text-base mb-4 space-y-2">
               <p>
-                一度参加してみたいという方は、ぜひ一度、下記例に沿ってご連絡ください。
+                一度参加してみたいという方は、
+                <Link
+                  href="/entry-notice"
+                  className="text-gold underline hover:text-gold/80 transition-colors"
+                >
+                  チーム加入注意事項
+                </Link>
+                をお読みの上、ぜひ一度、下記例に沿ってこちらのメール（
+                <a
+                  href="mailto:konosurookies@gmail.com"
+                  className="text-gold underline hover:text-gold/80 transition-colors"
+                >
+                  konosurookies@gmail.com
+                </a>
+                ）にてご連絡ください。
               </p>
               <p>
                 現在、若干名の入部募集中で10代〜30代の未経験・初心者大歓迎ですので宜しくお願い致します。
@@ -108,7 +123,7 @@ export default function JoinSection() {
               ※数日以内に返信がない場合には、お手数ですが再度ご連絡ください（受信設定のご確認もお願いします）。
             </p>
 
-            <div className="bg-gold/20 rounded-lg p-3 text-center">
+            <div className="bg-gold/20 rounded-lg p-3 sm:text-center">
               <p className="text-white font-semibold text-xs sm:text-sm md:text-base">
                 あなたからの「一緒に野球を楽しみたい！」というご連絡を、チーム一同お待ちしています！
               </p>

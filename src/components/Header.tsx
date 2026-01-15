@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 const navItems = [
   { label: "ホーム", href: "/" },
   { label: "チーム方針", href: "/policy" },
+  { label: "加入注意事項", href: "/entry-notice" },
   { label: "活動一覧", href: "/activities" },
   { label: "SNS", href: "/sns" },
   { label: "お問い合わせ", href: "/#contact" },
