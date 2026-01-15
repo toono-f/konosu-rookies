@@ -40,7 +40,7 @@ export default function JoinSection() {
                 一度参加してみたいという方は、ぜひ一度、下記例に沿ってご連絡ください。
               </p>
               <p>
-                現在、あと1名の入部募集中で10代〜30代の未経験・初心者大歓迎ですので宜しくお願い致します。
+                現在、若干名の入部募集中で10代〜30代の未経験・初心者大歓迎ですので宜しくお願い致します。
               </p>
             </div>
 
@@ -122,7 +122,7 @@ export default function JoinSection() {
                 【最後にひとこと】
               </h4>
               <p className="text-white/90 text-xs sm:text-sm md:text-base leading-relaxed sm:text-center">
-                「野球が好き」「もう一度グラウンドに立ちたい」「気の合う仲間といい汗を流したい」
+                「野球が好き」「これからもしくはもう一度グラウンドに立ちたい」「気の合う仲間といい汗を流したい」
                 <br />
                 そんな想いを持つあなたを歓迎します。
                 <br />

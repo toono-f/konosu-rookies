@@ -21,6 +21,12 @@ export default function ActivitiesSection() {
               <span className="text-navy/80">土曜日午前（最低4時間以上）</span>
             </div>
 
+            <div className="pl-0 sm:pl-[148px] md:sm:pl-[168px] text-navy/70 text-xs md:text-sm">
+              <p>
+                ※現在有志で日・祝も不定期に練習・試合活動してるたくさん野球できる環境です
+              </p>
+            </div>
+
             <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2">
               <span className="font-bold text-navy min-w-[140px] md:min-w-[160px]">
                 【活動時間】
